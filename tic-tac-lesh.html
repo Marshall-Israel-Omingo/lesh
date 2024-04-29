@@ -78,39 +78,6 @@
             elem_parent.appendChild(elem_name)
         }
 
-        let draw_board = {
-            _new: function (parameters = {
-                rows,
-                colums,
-            }) {
-                create_elem(_src = {
-                    _parent: "body",
-                    _name: "div",
-                    _class: "playboard"
-                })
-
-                for (let i = 0; i < parameters.rows; i++) {
-                    create_elem(_src = {
-                        _parent: ".playboard",
-                        _name: "div",
-                        _class: "new_line",
-                        _id:"#new" + i +"line"
-                    })
-                    for (let x = 0; x < parameters.colums; x++) {
-                        let lesh = 1
-                        let new_parent = "#new"+x+"line"
-                        alert(new_parent)
-                        lesh++
-                       
-                    }
-                }
-            }
-        }
-        draw_board._new(parameters = {
-            rows: 2,
-            colums: 2
-        })
-
     </script>
 </body>
 
